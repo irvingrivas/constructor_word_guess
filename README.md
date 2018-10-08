@@ -1,6 +1,6 @@
 # Node Word Guess
 
-This is a simple word guess game that uses object oriented programming.
+This is a simple word guess game that uses object oriented programming and recursion.
 
 This is to be ran on a terminal that has node and npm.
 
