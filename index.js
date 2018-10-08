@@ -1,7 +1,7 @@
 var Word = require("./Word.js");
 var inquirer = require("inquirer");
 
-var randWordList = ["router","pencil","computer","love","genius","antidisestablishmentarianism",
+var randWordList = ["router","pencil","computer","love","genius",
     "democrat", "republican","trump","obama","macbook",
     "couch","barbell","dancer","weights","random","snuffleupagus",
     "raining","sunny","philidelphia","washington"];
