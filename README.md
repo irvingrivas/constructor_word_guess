@@ -9,7 +9,7 @@ The setup instructions are the following:
 git clone "https://github.com/irvingrivas/constructor_word_guess"
 cd constructor_word_guess
 npm install
-node
+node index.js
 ```
 * You play the game by guessing a letter
 * If you guess right, the letter is filled into the word
