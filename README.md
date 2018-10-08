@@ -5,6 +5,6 @@
 This is to be ran on a terminal that has node and npm.
 
 The instructions are the following:
-'''sh
+```sh
 git clone "https://github.com/irvingrivas/constructor_word_guess"
-'''
+```
