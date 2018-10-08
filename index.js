@@ -1,10 +1,10 @@
 var Word = require("./Word.js");
 var inquirer = require("inquirer");
 
-var randWordList = ["router", "pencil","computer","love","genius","antidisestablishmentarianism",
-    "democrat", "republican", "Trump", "Obama", "macbook",
+var randWordList = ["router","pencil","computer","love","genius","antidisestablishmentarianism",
+    "democrat", "republican","Trump","Obama", "macbook",
     "couch","barbell","dancer","weights","random","snuffleupagus",
-    "raining", "sunny", "Philidelphia", "Washington"];
+    "raining","sunny","Philidelphia","Washington"];
 var randWord = randWordList[Math.floor(Math.random() * randWordList.length)];
 var word = new Word(randWord);
 var numGuesses = 10;
