@@ -10,7 +10,7 @@ function Letter(letter) {
             return "_";
         }
     };
-    this.checkGuess = function (c) {
+    this.checkLetter = function (c) {
         if (c === this._letter) {
             this._guessed = true;
         }

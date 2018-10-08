@@ -7,18 +7,22 @@ var randWordList = ["router", "pencil","computer","love","genius","antidisestabl
     "raining", "sunny", "Philidelphia", "Washington"];
 var randWord = randWordList[Math.floor(Math.random() * randWordList.length)];
 var word = new Word(randWord);
-word.setWord();
 
 function init() {
     inquirer
         .prompt({
             name: "letter",
             type: "input",
-            message: "What letter would you like to guess?"
+            message: "What letter would you like to guess?\n" + word.getString() + "\n"
         })
-        .then(function(letter) {
-            word.check(letter);
+        .then(function(answer) {
+            word.checkLetters(answer.letter);
             console.log(word.getString());
+            if (word.getString() === randWord) {
+                console.log("The word is " + randWord + ". You win!");
+            } else {
+                init();
+            }
         })
 }
 
