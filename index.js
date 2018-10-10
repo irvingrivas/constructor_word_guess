@@ -22,7 +22,7 @@ function init() {
                 word.checkLetters(answer.letter);
                 console.log(word.getString());
 
-                if (!isNaN(answer)) {
+                if (!isNaN(answer.letter)) {
                     console.log("Not a letter!");
                     init();
                 } else if (answer.letter.length > 1) {
