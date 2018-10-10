@@ -28,13 +28,13 @@ function init() {
                 } else if (answer.letter.length > 1) {
                     console.log("One letter inputs only!");
                     init();
-                } else if (word.getString() === randWord) {
-                    console.log("The word is " + randWord + ". You win!");
-                    return;
-                } else {
+                } else if (word.getString() !== randWord) {
                     --numGuesses;
                     console.log("You have " + numGuesses + " guesses left.\n");
                     init();
+                } else {
+                    console.log("The word is " + randWord + ". You win!");
+                    return;
                 }
             })
     } else {
