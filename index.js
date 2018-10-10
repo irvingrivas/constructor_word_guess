@@ -20,8 +20,7 @@ function init() {
             .then(function (answer) {
                 answer.letter = answer.letter.toLowerCase();
                 word.checkLetters(answer.letter);
-                console.log(word.getString());
-
+                
                 if (!isNaN(answer.letter)) {
                     console.log("Not a letter!");
                     init();
