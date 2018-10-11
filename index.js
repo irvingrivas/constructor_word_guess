@@ -19,8 +19,6 @@ function init() {
             })
             .then(function (answer) {
                 answer.letter = answer.letter.toLowerCase();
-                word.checkLetters(answer.letter);
-                
                 if (!isNaN(answer.letter)) {
                     console.log("Not a letter!");
                     init();
@@ -28,6 +26,7 @@ function init() {
                     console.log("One letter inputs only!");
                     init();
                 } else if (word.getString() !== randWord) {
+                    word.checkLetters(answer.letter);
                     --numGuesses;
                     console.log("You have " + numGuesses + " guesses left.\n");
                     init();
