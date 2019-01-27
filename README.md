@@ -14,4 +14,3 @@ node index.js
 * You play the game by guessing a letter of a random word.
 * If you guess right, the letter is filled into the random word.
 * Once you type in all the letters that comprise the word, you win!
-* There are no penalties or limited number of guesses.
